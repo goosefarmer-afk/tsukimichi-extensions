@@ -1,0 +1,15 @@
+{
+  "id": "c85ec5d0-eb47-44ae-8b69-f4925f739a00",
+  "name": "CulturedWorks",
+  "description": "",
+  "isManga": true,
+  "extClass": "CulturedWorks",
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://culturedworks.com",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true,
+  "iconUrl": "./icon.png"
+}

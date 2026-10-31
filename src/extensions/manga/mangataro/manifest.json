@@ -1,0 +1,15 @@
+{
+  "id": "d670ce0f-a690-4894-b8f4-8b48aef7ed55",
+  "name": "MangaTaro",
+  "description": "",
+  "extClass": "MangaTaro",
+  "isManga": true,
+  "contentRating": "mixed",
+  "supportsPopular": true,
+  "supportsLatest": true,
+  "version": "0.1.0",
+  "lang": "multi",
+  "url": "https://mangataro.org",
+  "apiUrl": "",
+  "iconUrl": "./icon.png"
+}

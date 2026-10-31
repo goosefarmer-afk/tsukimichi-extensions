@@ -1,0 +1,16 @@
+{
+  "id": "e7d537ab-5251-4127-af53-1c340d64cee3",
+  "name": "LilyManga",
+  "iconUrl": "./icon.png",
+  "description": "",
+  "extClass": "LilyManga",
+  "contentRating": "mixed",
+  "isManga": true,
+  "lang": "en",
+  "isNsfw": true,
+  "url": "https://lilymanga.net",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": false,
+  "supportsPopular": true
+}

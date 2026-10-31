@@ -1,0 +1,15 @@
+{
+  "id": "eded1ed2-b39b-4a6e-a4d3-437267481e64",
+  "name": "WeebCentral",
+  "description": "",
+  "extClass": "WeebCentral",
+  "isManga": true,
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://weebcentral.com",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

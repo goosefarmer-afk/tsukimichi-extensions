@@ -1,0 +1,15 @@
+{
+  "id": "427e90bd-48ef-46c8-98bb-315a19a96bf3",
+  "name": "Manga Fire",
+  "description": "",
+  "isManga": true,
+  "extClass": "MangaFire",
+  "lang": "multi",
+  "contentRating": "mixed",
+  "url": "https://mangafire.to",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true,
+  "iconUrl": "./icon.png"
+}

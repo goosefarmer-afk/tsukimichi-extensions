@@ -1,0 +1,15 @@
+{
+  "id": "91aa0706-a613-4d59-aea2-81305c6726e0",
+  "name": "AniWave (Unoriginal)",
+  "description": "",
+  "isManga": false,
+  "extClass": "AniWave",
+  "lang": "en",
+  "contentRating": "sfw",
+  "url": "https://animewave.to",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

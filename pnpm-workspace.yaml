@@ -1,0 +1,6 @@
+allowBuilds:
+  esbuild: true
+  electron: true
+  sharp: true
+minimumReleaseAgeExclude:
+  - "@tsukimichi/common"

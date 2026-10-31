@@ -1,0 +1,16 @@
+{
+  "id": "a52dd413-0d74-4ac6-8a93-3e1b724bf259",
+  "name": "Philia Scans",
+  "url": "https://philiascans.org",
+  "iconUrl": "./icon.png",
+  "description": "",
+  "contentRating": "sfw",
+  "isManga": true,
+  "extClass": "PhiliaScans",
+  "lang": "en",
+  "isNsfw": false,
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

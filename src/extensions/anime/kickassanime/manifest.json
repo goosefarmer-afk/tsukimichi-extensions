@@ -1,0 +1,15 @@
+{
+  "id": "fc6db56e-bb22-4d3c-96b0-fb28159d4472",
+  "name": "KickAssAnime",
+  "description": "",
+  "isManga": false,
+  "extClass": "KickAssAnime",
+  "contentRating": "sfw",
+  "lang": "en",
+  "url": "https://kaa.lt",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

@@ -1,0 +1,15 @@
+{
+  "id": "1f5fd8a0-30cd-4722-bdbc-e1e683b2dd12",
+  "name": "MangaKatana",
+  "description": "",
+  "isManga": true,
+  "extClass": "MangaKatana",
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://mangakatana.com",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": false,
+  "iconUrl": "./icon.png"
+}

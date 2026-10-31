@@ -1,0 +1,134 @@
+name: Build & Publish
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**"
+      - "!**.md"
+      - "!.github/**"
+      - ".github/workflows/publish.yml"
+
+  # Trigger manually
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [lts/*]
+        pnpm-version: [latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Detect changed extensions
+        id: changed
+        run: |
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+
+          # If before is empty, use an empty string
+          if [ -z "$BEFORE" ] || [ "$BEFORE" == "null" ]; then
+            BEFORE=""
+          fi
+
+          CHANGED=$(node scripts/get-changed-extensions.js "$BEFORE" "$AFTER")
+          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+          echo "Detected changes: '$CHANGED'"
+
+      - name: Skip if nothing changed
+        if: steps.changed.outputs.changed == '' || steps.changed.outputs.changed == ' ' || steps.changed.outputs.changed == 'null'
+        run: echo "No extension changes, skipping build."
+
+      - name: Setup node
+        id: setup-node
+        if: steps.changed.outputs.changed != '' && steps.changed.outputs.changed != ' ' && steps.changed.outputs.changed != 'null'
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Setup pnpm
+        id: setup-pnpm
+        if: steps.changed.outputs.changed != '' && steps.changed.outputs.changed != ' ' && steps.changed.outputs.changed != 'null'
+        uses: pnpm/action-setup@v6
+        with:
+          version: ${{ matrix.pnpm-version }}
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: get-pnpm-cache-dir
+        if: steps.changed.outputs.changed != '' && steps.changed.outputs.changed != ' ' && steps.changed.outputs.changed != 'null'
+        run: |
+          echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Cache pnpm modules
+        id: pnpm-cache
+        if: steps.changed.outputs.changed != '' && steps.changed.outputs.changed != ' ' && steps.changed.outputs.changed != 'null'
+        uses: actions/cache@v5
+        with:
+          path: ${{ steps.get-pnpm-cache-dir.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install Dependencies
+        id: install-dependencies
+        if: steps.changed.outputs.changed != '' && steps.changed.outputs.changed != ' ' && steps.changed.outputs.changed != 'null'
+        run: pnpm install --frozen-lockfile
+
+      - name: Debug git info
+        if: steps.changed.outputs.changed != '' && steps.changed.outputs.changed != ' ' && steps.changed.outputs.changed != 'null'
+        run: |
+          echo "Git before: '${{ github.event.before }}'"
+          echo "Git after: '${{ github.sha }}'"
+          echo "Git event name: '${{ github.event_name }}'"
+          git log --oneline -5 || echo "No commits yet"
+
+      - name: Build extensions
+        if: steps.changed.outputs.changed != '' && steps.changed.outputs.changed != ' ' && steps.changed.outputs.changed != 'null'
+        run: |
+          echo "Building ALL extensions"
+          BUILD_TYPE=all pnpm exec tsup --config tsup.config.ts
+
+      - name: Archive extensions
+        if: steps.changed.outputs.changed != '' && steps.changed.outputs.changed != ' ' && steps.changed.outputs.changed != 'null'
+        run: ARCHIVE_TYPE=all node scripts/archiver.js
+
+      - name: Regenerate registry (anime.json / manga.json)
+        if: steps.changed.outputs.changed != '' && steps.changed.outputs.changed != ' ' && steps.changed.outputs.changed != 'null'
+        run: EXTENSION_TYPE=all node scripts/generate-extension-meta.js
+
+      - name: Deploy to extensions repo
+        if: steps.changed.outputs.changed != '' && steps.changed.outputs.changed != ' ' && steps.changed.outputs.changed != 'null'
+        env:
+          TOKEN: ${{ secrets.EXTENSIONS_REPO_TOKEN }}
+        run: |
+          git log -1 --pretty=%B > /tmp/extensions-commit-msg
+          rm -rf /tmp/extensions-repo
+          git clone "https://x-access-token:${TOKEN}@github.com/goosefarmer-afk/extensions-repo.git" /tmp/extensions-repo
+          rm -rf /tmp/extensions-repo/extensions /tmp/extensions-repo/anime.json /tmp/extensions-repo/manga.json
+          cp -r extensions /tmp/extensions-repo/extensions
+          cp anime.json manga.json /tmp/extensions-repo/
+          cd /tmp/extensions-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -F /tmp/extensions-commit-msg
+          git push

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "ESNEXT",
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "moduleResolution": "Bundler",
+    "outDir": "dist",
+    "noEmit": true,
+    "strict": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "noImplicitOverride": true,
+    "paths": {
+      "cheerio": ["./node_modules/cheerio"],
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "scripts", "tsup.config.ts"],
+  "exclude": ["dist", "out", "node_modules", "need-fixes"]
+}

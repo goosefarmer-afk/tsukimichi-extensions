@@ -1,0 +1,15 @@
+{
+  "id": "60a5fe3e-2586-475c-861f-5b9c6bb0597e",
+  "name": "Toonily.me",
+  "iconUrl": "./icon.png",
+  "description": "",
+  "extClass": "ToonilyME",
+  "isManga": true,
+  "lang": "en",
+  "contentRating": "nsfw",
+  "url": "https://toontop.io",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

@@ -1,0 +1,15 @@
+{
+  "id": "74a5d6e2-29fb-4b2d-b723-9cad25faee86",
+  "name": "Mangadotnet",
+  "description": "",
+  "isManga": true,
+  "extClass": "Mangadotnet",
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://mangadot.net",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

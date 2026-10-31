@@ -1,0 +1,16 @@
+{
+  "id": "7f33a863-a115-4d17-9773-d9ae93300c69",
+  "name": "Senshi",
+  "extClass": "Senshi",
+  "description": "",
+  "isManga": false,
+  "contentRating": "mixed",
+  "lang": "en",
+  "minAppVersion": "1.0.0",
+  "url": "https://senshi.to",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

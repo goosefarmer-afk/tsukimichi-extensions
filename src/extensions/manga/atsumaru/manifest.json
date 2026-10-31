@@ -1,0 +1,15 @@
+{
+  "id": "581bfdde-35a4-4c84-b337-e8daa630145a",
+  "name": "Atsumaru",
+  "description": "",
+  "extClass": "Atsumaru",
+  "isManga": true,
+  "contentRating": "mixed",
+  "lang": "en",
+  "url": "https://atsu.moe",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true,
+  "iconUrl": "./icon.png"
+}

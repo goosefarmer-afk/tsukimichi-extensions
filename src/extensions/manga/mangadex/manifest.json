@@ -1,0 +1,15 @@
+{
+  "id": "be7645dc-c8ad-40a0-a99d-3b7628557ea7",
+  "name": "MangaDex",
+  "url": "https://mangadex.org",
+  "isManga": true,
+  "extClass": "MangaDex",
+  "lang": "multi",
+  "contentRating": "mixed",
+  "description": "",
+  "version": "0.1.0",
+  "apiUrl": "https://api.mangadex.org",
+  "supportsPopular": true,
+  "supportsLatest": true,
+  "iconUrl": "./icon.png"
+}

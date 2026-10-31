@@ -1,0 +1,15 @@
+{
+  "id": "73a5d2bb-17f8-4c80-aef9-10744136ba37",
+  "name": "HentaiRead",
+  "description": "",
+  "isManga": true,
+  "extClass": "HentaiRead",
+  "lang": "en",
+  "contentRating": "nsfw",
+  "url": "https://hentairead.com",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true,
+  "iconUrl": "./icon.png"
+}

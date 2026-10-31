@@ -1,0 +1,141 @@
+import type { MultiSelectFilter, SelectFilter } from "@tsukimichi/common";
+
+const StatusOptions = [
+  { label: "All", value: "all" },
+  { label: "Ongoing", value: "ongoing" },
+  { label: "Completed", value: "completed" },
+  { label: "Hiatus", value: "hiatus" },
+];
+
+export const StatusFilter: SelectFilter = {
+  key: "StatusValue",
+  label: "Status",
+  options: StatusOptions,
+  type: "select",
+  defaultValue: StatusOptions[0]?.value,
+};
+
+const SeriesTypeOptions = [
+  { label: "All", value: "all" },
+  { label: "Manga", value: "manga" },
+  { label: "Manhwa", value: "manhwa" },
+  { label: "Manhua", value: "manhua" },
+  { label: "Comic", value: "comic" },
+];
+
+export const SeriesTypeFilter: SelectFilter = {
+  key: "TypeValue",
+  label: "Type",
+  options: SeriesTypeOptions,
+  type: "select",
+  defaultValue: SeriesTypeOptions[0]?.value,
+};
+
+const SortOrderOptions = [
+  { label: "Default", value: "all" },
+  { label: "A-Z", value: "title" },
+  { label: "Z-A", value: "titlereverse" },
+  { label: "Latest Update", value: "update" },
+  { label: "Last Added", value: "latest" },
+  { label: "Popular", value: "popular" },
+];
+
+export const SortFilter: SelectFilter = {
+  key: "OrderValue",
+  label: "Sort By",
+  options: SortOrderOptions,
+  type: "select",
+  defaultValue: SortOrderOptions[0]?.value,
+};
+
+export const GenreOptions = [
+  { label: "Abilities", value: "2" },
+  { label: "Action", value: "3" },
+  { label: "Adaptation", value: "4" },
+  { label: "Adventure", value: "5" },
+  { label: "Another Chance", value: "6" },
+  { label: "Apocalypse", value: "7" },
+  { label: "Based On A Novel", value: "8" },
+  { label: "Cheat", value: "9" },
+  { label: "Comedy", value: "10" },
+  { label: "Conspiracy", value: "11" },
+  { label: "Cultivation", value: "12" },
+  { label: "Demon", value: "13" },
+  { label: "Demon King", value: "14" },
+  { label: "Dragon", value: "15" },
+  { label: "Drama", value: "16" },
+  { label: "Drop", value: "17" },
+  { label: "Dungeon", value: "18" },
+  { label: "Dungeons", value: "19" },
+  { label: "Fantasy", value: "20" },
+  { label: "Game", value: "21" },
+  { label: "Genius", value: "22" },
+  { label: "Ghosts", value: "23" },
+  { label: "Harem", value: "24" },
+  { label: "Hero", value: "25" },
+  { label: "Hidden Identity", value: "26" },
+  { label: "HighFantasy", value: "27" },
+  { label: "Historical", value: "28" },
+  { label: "Horror", value: "29" },
+  { label: "Isekai", value: "30" },
+  { label: "Kingdom Building", value: "31" },
+  { label: "Korean", value: "32" },
+  { label: "Magic", value: "33" },
+  { label: "Manhwa", value: "34" },
+  { label: "Martial Arts", value: "35" },
+  { label: "Mature", value: "36" },
+  { label: "Mecha", value: "37" },
+  { label: "Medical", value: "38" },
+  { label: "Military", value: "39" },
+  { label: "Misunderstanding", value: "40" },
+  { label: "MMORPG", value: "41" },
+  { label: "Monster", value: "42" },
+  { label: "Murim", value: "43" },
+  { label: "Mystery", value: "44" },
+  { label: "Necromancer", value: "45" },
+  { label: "Noble", value: "46" },
+  { label: "Overpowered", value: "47" },
+  { label: "Parody", value: "48" },
+  { label: "Pets", value: "49" },
+  { label: "Psycho", value: "50" },
+  { label: "Psychological", value: "51" },
+  { label: "Rebirth", value: "52" },
+  { label: "Reincarnation", value: "53" },
+  { label: "Returner", value: "54" },
+  { label: "Revenge", value: "55" },
+  { label: "Romance", value: "56" },
+  { label: "School Life", value: "57" },
+  { label: "Sci-fi", value: "58" },
+  { label: "Seinen", value: "59" },
+  { label: "Shota", value: "60" },
+  { label: "Shounen", value: "61" },
+  { label: "Slice of Life", value: "62" },
+  { label: "Spirits", value: "63" },
+  { label: "Strategy", value: "64" },
+  { label: "Supernatural", value: "65" },
+  { label: "Survival", value: "66" },
+  { label: "System", value: "67" },
+  { label: "Time Control", value: "68" },
+  { label: "Tower", value: "69" },
+  { label: "Tragedy", value: "70" },
+  { label: "Video Game", value: "71" },
+  { label: "Virtual Reality", value: "72" },
+  { label: "War", value: "73" },
+  { label: "Weak To Strong", value: "74" },
+  { label: "Webtoon", value: "75" },
+  { label: "Wuxia", value: "76" },
+  { label: "Xianxia", value: "77" },
+  { label: "Zombies", value: "78" },
+  { label: "Thriller", value: "79" },
+  { label: "Bullying", value: "81" },
+];
+
+const GenreFilter: MultiSelectFilter = {
+  key: "genres_checked[]",
+  label: "Genres",
+  options: GenreOptions,
+  type: "multi-select",
+  renderAs: "checkbox-group",
+};
+
+export const Filters = [SortFilter, StatusFilter, SeriesTypeFilter, GenreFilter];

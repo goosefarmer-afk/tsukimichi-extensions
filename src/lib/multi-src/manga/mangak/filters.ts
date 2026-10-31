@@ -1,0 +1,151 @@
+import type { SelectFilter, TextFilter, TriStateCheckboxFilter } from "@tsukimichi/common";
+
+export const SortFilter: SelectFilter = {
+  key: "sort",
+  type: "select",
+  label: "Sort By",
+  options: [
+    { label: "Best Match", value: "best_match" },
+    { label: "Most Followed", value: "popular" },
+    { label: "Latest Updated", value: "latest" },
+    { label: "Recently Added", value: "newest" },
+    { label: "Highest Rating", value: "rating" },
+    { label: "Views: Today", value: "views_today" },
+    { label: "Views: 7days", value: "views_7days" },
+    { label: "Views: 30days", value: "views_30days" },
+    { label: "Views: All Time", value: "views" },
+    { label: "Most Chapters", value: "chapters" },
+    { label: "A-Z", value: "alphabetical" },
+  ],
+  defaultValue: "best_match",
+};
+
+export const ContentRatingFilter: SelectFilter = {
+  key: "content_rating",
+  label: "Content Rating",
+  options: ["Any", "Safe", "Suggestive", "Erotica", "Pornographic"].map((item) => ({
+    label: item,
+    value: item.toLowerCase(),
+  })),
+  type: "select",
+  defaultValue: "any",
+};
+
+export const StatusFilter: SelectFilter = {
+  key: "status",
+  label: "Status",
+  options: ["Any", "Ongoing", "Completed", "Hiatus", "Cancelled"].map((item) => ({
+    label: item,
+    value: item.toLowerCase(),
+  })),
+  type: "select",
+  defaultValue: "any",
+};
+
+export const TypeFilter: SelectFilter = {
+  key: "type",
+  label: "Type",
+  options: ["Any", "Manga", "Manhwa", "Manhua"].map((item) => ({
+    label: item,
+    value: item.toLowerCase(),
+  })),
+  defaultValue: "any",
+  type: "select",
+};
+
+export const AuthorFilter: TextFilter = {
+  key: "author",
+  label: "Author",
+  type: "text",
+  placeholder: "Search by author name",
+  defaultValue: "",
+};
+
+export const MinimumChaptersFilter = {
+  key: "min_ch",
+  label: "Minimum Chapters",
+  type: "text",
+  placeholder: "e.g. 20",
+  defaultValue: "",
+} satisfies TextFilter;
+
+const genresOptions = [
+  { label: "Action", value: "action" },
+  { label: "Adult", value: "adult" },
+  { label: "Adventure", value: "adventure" },
+  { label: "Age Gap", value: "age-gap" },
+  { label: "All Ages", value: "all-ages" },
+  { label: "BDSM", value: "bdsm" },
+  { label: "BL", value: "bl" },
+  { label: "Campus", value: "campus" },
+  { label: "Comedy", value: "comedy" },
+  { label: "Comics", value: "comics" },
+  { label: "Cooking", value: "cooking" },
+  { label: "Crime", value: "crime" },
+  { label: "Demons", value: "demons" },
+  { label: "Doujins- Original Series", value: "doujins-original-series" },
+  { label: "Doujinshi", value: "doujinshi" },
+  { label: "Drama", value: "drama" },
+  { label: "Ecchi", value: "ecchi" },
+  { label: "Family", value: "family" },
+  { label: "Fantasy", value: "fantasy" },
+  { label: "Female Friend", value: "female-friend" },
+  { label: "Fetish", value: "fetish" },
+  { label: "Gender Bender", value: "gender-bender" },
+  { label: "Girls Lacrosse Club", value: "girls-lacrosse-club" },
+  { label: "GL", value: "gl" },
+  { label: "Gossip", value: "gossip" },
+  { label: "Harem", value: "harem" },
+  { label: "Hentai", value: "hentai" },
+  { label: "Hentai Manga", value: "hentai-manga" },
+  { label: "Historical", value: "historical" },
+  { label: "Horror", value: "horror" },
+  { label: "Incest", value: "incest" },
+  { label: "Isekai", value: "isekai" },
+  { label: "Josei", value: "josei" },
+  { label: "Kimi no na wa", value: "kimi-no-na-wa" },
+  { label: "Magic", value: "magic" },
+  { label: "Manga", value: "manga" },
+  { label: "Manhwa", value: "manhwa" },
+  { label: "Manhwa Hentai", value: "manhwa-hentai" },
+  { label: "Martial Arts", value: "martial-arts" },
+  { label: "Mature", value: "mature" },
+  { label: "Milf", value: "milf" },
+  { label: "Military", value: "military" },
+  { label: "Monster Girls", value: "monster-girls" },
+  { label: "Mystery", value: "mystery" },
+  { label: "NTR", value: "ntr" },
+  { label: "Office", value: "office" },
+  { label: "Office Workers", value: "office-workers" },
+  { label: "Original Work", value: "original-work" },
+  { label: "Psychological", value: "psychological" },
+  { label: "Rape", value: "rape" },
+  { label: "Raw", value: "raw" },
+  { label: "Reincarnation", value: "reincarnation" },
+  { label: "Revenge", value: "revenge" },
+  { label: "Romance", value: "romance" },
+  { label: "School life", value: "school-life" },
+  { label: "Sci-Fi", value: "sci-fi" },
+  { label: "Secret Relationship", value: "secret-relationship" },
+  { label: "Seinen", value: "seinen" },
+  { label: "Shoujo", value: "shoujo" },
+  { label: "Shounen", value: "shounen" },
+  { label: "Slice of Life", value: "slice-of-life" },
+  { label: "Smut", value: "smut" },
+  { label: "Sports", value: "sports" },
+  { label: "Supernatural", value: "supernatural" },
+  { label: "Thriller", value: "thriller" },
+  { label: "Tragedy", value: "tragedy" },
+  { label: "Uncensored", value: "uncensored" },
+  { label: "Vanilla", value: "vanilla" },
+  { label: "Webtoon", value: "webtoon" },
+  { label: "Yaoi", value: "yaoi" },
+  { label: "Yuri", value: "yuri" },
+];
+
+export const GenresFilter: TriStateCheckboxFilter = {
+  key: "genres",
+  label: "Genres",
+  options: genresOptions,
+  type: "tri-state-checkbox",
+};

@@ -1,0 +1,15 @@
+{
+  "id": "f21aa317-e220-4121-bc1c-7ba55a9c7cc4",
+  "name": "ZazaManga",
+  "iconUrl": "./icon.png",
+  "description": "",
+  "extClass": "ZazaManga",
+  "isManga": true,
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://www.zazamanga.com",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

@@ -1,0 +1,15 @@
+{
+  "id": "2ee104e8-df79-4af7-aad4-c53ae6a07755",
+  "name": "AnimeSogo",
+  "description": "",
+  "isManga": false,
+  "extClass": "AnimeSogo",
+  "lang": "en",
+  "contentRating": "sfw",
+  "url": "https://animesogo.to",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

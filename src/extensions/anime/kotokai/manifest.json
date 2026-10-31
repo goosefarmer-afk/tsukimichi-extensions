@@ -1,0 +1,15 @@
+{
+  "id": "55490b2c-644c-4ee3-8730-c82c38bc8c21",
+  "name": "AnimeKai (Unoriginal)",
+  "description": "",
+  "isManga": false,
+  "extClass": "KotoKai",
+  "contentRating": "sfw",
+  "lang": "en",
+  "url": "https://animekaitv.to",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

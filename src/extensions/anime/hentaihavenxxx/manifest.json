@@ -1,0 +1,15 @@
+{
+  "id": "019ae495-bb78-70ee-8a36-0fa68216045e",
+  "name": "HentaiHaven.xxx",
+  "description": "",
+  "isManga": false,
+  "extClass": "HentaiHaven",
+  "lang": "en",
+  "contentRating": "nsfw",
+  "url": "https://hentaihaven.xxx",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

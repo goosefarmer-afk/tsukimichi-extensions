@@ -1,0 +1,15 @@
+{
+  "id": "a2c632c6-e3e5-45d5-a540-6354f774fc78",
+  "name": "Flame Comics",
+  "url": "https://flamecomics.xyz",
+  "isManga": true,
+  "extClass": "FlameComics",
+  "lang": "en",
+  "contentRating": "sfw",
+  "description": "",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true,
+  "iconUrl": "./icon.png"
+}

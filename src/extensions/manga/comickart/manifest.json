@@ -1,0 +1,15 @@
+{
+  "id": "ccfbc4a9-aeac-4fa8-8810-4c7b661ce4c5",
+  "name": "Comick (Unoriginal)",
+  "extClass": "ComickArt",
+  "description": "",
+  "isManga": true,
+  "lang": "multi",
+  "contentRating": "mixed",
+  "url": "https://comick.art",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true,
+  "iconUrl": "./icon.png"
+}

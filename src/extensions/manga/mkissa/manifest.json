@@ -1,0 +1,16 @@
+{
+  "id": "a11e124a-a4d3-4297-b6c8-4ccc153a4edb",
+  "name": "MKissa",
+  "description": "",
+  "isManga": true,
+  "extClass": "MKissaManga",
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://mkissa.to",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true,
+  "requireChapterImageProxy": true
+}

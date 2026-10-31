@@ -1,0 +1,16 @@
+{
+  "id": "167502ab-a795-4122-8f40-f69825e632f3",
+  "name": "AnimeParadise",
+  "description": "",
+  "isManga": false,
+  "extClass": "AnimeParadise",
+  "contentRating": "sfw",
+  "minAppVersion": "1.0.0",
+  "url": "https://www.animeparadise.moe",
+  "iconUrl": "./icon.png",
+  "version": "1.0.0",
+  "apiUrl": "",
+  "lang": "en",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

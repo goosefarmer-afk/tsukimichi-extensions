@@ -1,0 +1,15 @@
+{
+  "id": "5ccccb2d-e606-4aec-b2a9-c6f9a69189f1",
+  "name": "AnimeSuge",
+  "description": "",
+  "isManga": false,
+  "extClass": "AnimeSuge",
+  "lang": "en",
+  "contentRating": "sfw",
+  "url": "https://animesuge.cz",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

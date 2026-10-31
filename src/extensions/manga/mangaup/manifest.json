@@ -1,0 +1,15 @@
+{
+  "id": "3bf682e5-e68e-436b-ac7e-6a2a1fbfac18",
+  "name": "MangaUp!",
+  "description": "",
+  "isManga": true,
+  "extClass": "MangaUp",
+  "lang": "en",
+  "contentRating": "sfw",
+  "url": "https://global.manga-up.com",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

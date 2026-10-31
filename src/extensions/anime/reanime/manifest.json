@@ -1,0 +1,16 @@
+{
+  "id": "2f0b06ce-fc15-4332-8a16-0308c50d82e6",
+  "name": "Re:ANIME",
+  "extClass": "ReAnime",
+  "description": "",
+  "isManga": false,
+  "contentRating": "sfw",
+  "lang": "en",
+  "minAppVersion": "1.0.0",
+  "url": "https://reanime.to",
+  "iconUrl": "./icon.png",
+  "version": "1.0.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

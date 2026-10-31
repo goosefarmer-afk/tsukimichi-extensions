@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [lts/*]
+        pnpm-version: [latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: ${{ matrix.pnpm-version}}
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: get-pnpm-cache-dir
+        run: |
+          echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Cache pnpm modules
+        uses: actions/cache@v5
+        with:
+          path: ${{ steps.get-pnpm-cache-dir.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-${{ matrix.node-version }}-${{ matrix.pnpm-version }}-1-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.node-version }}-${{ matrix.pnpm-version }}-1
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Detect changed extensions
+        id: changed
+        run: |
+          CHANGED=$(node scripts/get-changed-extensions.js "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.head.sha }}")
+          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+
+      - name: Build extensions
+        if: steps.changed.outputs.changed != '' && steps.changed.outputs.changed != ' ' && steps.changed.outputs.changed != 'null'
+        run: |
+          echo "Building ALL extensions"
+          BUILD_TYPE=all pnpm exec tsup --config tsup.config.ts
+
+      - name: Typecheck
+        run: pnpm typecheck

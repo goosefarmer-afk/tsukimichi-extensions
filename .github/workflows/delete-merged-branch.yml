@@ -1,0 +1,17 @@
+name: Cleanup merged branches
+
+on:
+  pull_request:
+    types:
+      - closed
+
+permissions:
+  contents: write
+
+jobs:
+  delete-merged-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jnojekyll/delete-merged-branch@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,15 @@
+{
+  "id": "95da556d-e817-4313-b89d-c4dd2cdac055",
+  "name": "AnimePahe",
+  "description": "",
+  "isManga": false,
+  "extClass": "AnimePahe",
+  "lang": "en",
+  "contentRating": "sfw",
+  "url": "https://animepahe.si",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": false,
+  "supportsPopular": true
+}

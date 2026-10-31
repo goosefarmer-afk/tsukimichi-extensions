@@ -1,0 +1,15 @@
+{
+  "id": "e0e13f65-cf36-42eb-add5-3eb1a558f76c",
+  "name": "ManhwaToon.me",
+  "url": "https://www.manhwatoon.me",
+  "iconUrl": "./icon.png",
+  "description": "",
+  "isManga": true,
+  "extClass": "ManhwaToonMe",
+  "lang": "en",
+  "contentRating": "mixed",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

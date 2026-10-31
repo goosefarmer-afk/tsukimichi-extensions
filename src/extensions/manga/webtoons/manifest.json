@@ -1,0 +1,15 @@
+{
+  "id": "01529321-b6cd-43c2-b0b1-6161de4f5096",
+  "name": "Webtoons.com",
+  "url": "https://www.webtoons.com",
+  "isManga": true,
+  "extClass": "WebtoonsCom",
+  "lang": "multi",
+  "contentRating": "sfw",
+  "iconUrl": "./icon.png",
+  "description": "",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

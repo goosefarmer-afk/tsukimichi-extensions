@@ -1,0 +1,15 @@
+{
+  "id": "7c36271d-7a3c-4ec6-b57d-6daff57f35ca",
+  "name": "WatchHentai",
+  "extClass": "WatchHentai",
+  "description": "",
+  "isManga": false,
+  "lang": "en",
+  "contentRating": "sfw",
+  "url": "https://watchhentai.net",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

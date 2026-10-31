@@ -1,0 +1,15 @@
+{
+  "id": "7ac3ad11-8fdb-4a28-ae29-d1ee9725830d",
+  "name": "NHentai",
+  "description": "",
+  "isManga": true,
+  "extClass": "NHentai",
+  "lang": "multi",
+  "contentRating": "nsfw",
+  "url": "https://nhentai.net",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

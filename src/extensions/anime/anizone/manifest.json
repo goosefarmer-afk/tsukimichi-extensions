@@ -1,0 +1,15 @@
+{
+  "id": "01a498eb-8531-4aaa-b370-8c957d849ae0",
+  "name": "AniZone",
+  "extClass": "AniZone",
+  "description": "",
+  "isManga": false,
+  "lang": "en",
+  "contentRating": "sfw",
+  "url": "https://anizone.to",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

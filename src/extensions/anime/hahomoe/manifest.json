@@ -1,0 +1,15 @@
+{
+  "id": "d2f6aa17-dbb1-4119-8f79-32cf4f1e4896",
+  "name": "HahoMoe",
+  "extClass": "HahoMoe",
+  "description": "",
+  "isManga": false,
+  "lang": "en",
+  "contentRating": "nsfw",
+  "url": "https://haho.moe",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

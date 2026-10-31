@@ -1,0 +1,15 @@
+{
+  "id": "62afa26f-73b6-46d1-a3c4-01fe142fb34f",
+  "name": "MangaBall",
+  "description": "",
+  "extClass": "MangaBall",
+  "isManga": true,
+  "lang": "multi",
+  "contentRating": "mixed",
+  "url": "https://mangaball.com",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

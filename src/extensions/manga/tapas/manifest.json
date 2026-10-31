@@ -1,0 +1,15 @@
+{
+  "id": "a3097681-63af-4aca-ae56-5f7cba06adf4",
+  "name": "Tapas",
+  "extClass": "Tapas",
+  "iconUrl": "./icon.png",
+  "description": "",
+  "isManga": true,
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://tapas.io",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

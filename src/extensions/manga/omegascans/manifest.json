@@ -1,0 +1,15 @@
+{
+  "id": "019b27e5-35c4-7b5a-af67-b12cf2dfeedd",
+  "name": "Omega Scans",
+  "description": "",
+  "isManga": true,
+  "extClass": "OmegaScans",
+  "lang": "en",
+  "contentRating": "nsfw",
+  "url": "https://omegascans.org",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

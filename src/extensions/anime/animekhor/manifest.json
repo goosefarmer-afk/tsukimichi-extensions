@@ -1,0 +1,15 @@
+{
+  "id": "b3cb3c0b-9c18-4ce0-ba42-357d40ce1d5a",
+  "name": "AnimeKhor",
+  "description": "",
+  "isManga": false,
+  "extClass": "AnimeKhor",
+  "lang": "en",
+  "contentRating": "sfw",
+  "url": "https://animekhor.org",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

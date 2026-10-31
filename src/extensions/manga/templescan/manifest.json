@@ -1,0 +1,15 @@
+{
+  "id": "518f0983-88d3-4ae1-9e53-16ec3b5ab6fb",
+  "name": "Temple Scan",
+  "iconUrl": "./icon.png",
+  "description": "",
+  "extClass": "TempleScan",
+  "isManga": true,
+  "lang": "en",
+  "contentRating": "nsfw",
+  "url": "https://templetoons.com",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

@@ -1,0 +1,15 @@
+{
+  "id": "4f355e99-cd3b-4239-b7ac-434a44a77c91",
+  "name": "MangaBats",
+  "description": "",
+  "isManga": true,
+  "extClass": "MangaBats",
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://www.mangabats.com",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true,
+  "iconUrl": "./icon.png"
+}

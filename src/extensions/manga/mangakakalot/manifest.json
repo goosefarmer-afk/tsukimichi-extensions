@@ -1,0 +1,15 @@
+{
+  "id": "8e9e6ed5-fb48-40de-a495-ae9a600e5d97",
+  "name": "MangaKakalot",
+  "description": "",
+  "isManga": true,
+  "extClass": "MangaKakalot",
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://www.mangakakalot.gg",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

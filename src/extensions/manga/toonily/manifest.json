@@ -1,0 +1,15 @@
+{
+  "id": "4dcb809c-291d-41c6-a3f0-b17fdab7c794",
+  "name": "Toonily",
+  "iconUrl": "./icon.png",
+  "description": "",
+  "extClass": "Toonily",
+  "isManga": true,
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://toonily.com",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

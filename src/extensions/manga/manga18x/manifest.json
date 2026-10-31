@@ -1,0 +1,15 @@
+{
+  "id": "c83cab9b-eaab-4f74-b290-b89a4fa9c201",
+  "name": "Manga18x",
+  "isManga": true,
+  "lang": "en",
+  "contentRating": "nsfw",
+  "extClass": "Manga18x",
+  "url": "https://manga18x.net",
+  "description": "",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true,
+  "iconUrl": "./icon.png"
+}

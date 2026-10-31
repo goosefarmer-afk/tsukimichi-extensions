@@ -1,0 +1,15 @@
+{
+  "id": "b73f25f1-c183-4f96-bfd1-cc8b183cc278",
+  "name": "MKissa",
+  "description": "",
+  "isManga": false,
+  "extClass": "MKissa",
+  "lang": "en",
+  "contentRating": "sfw",
+  "url": "https://mkissa.to/anime",
+  "iconUrl": "./icon.png",
+  "version": "0.1.1",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

@@ -1,0 +1,15 @@
+{
+  "id": "3545ebde-b3db-4656-8eb5-c254c8fc942d",
+  "name": "ManhwaRead",
+  "description": "",
+  "isManga": true,
+  "extClass": "ManhwaRead",
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://manhwaread.com",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

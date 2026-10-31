@@ -1,0 +1,15 @@
+{
+  "id": "b94584d8-23cb-49e6-a00c-53c0aad97f16",
+  "name": "RizzComic",
+  "url": "https://rizzfables.com",
+  "iconUrl": "./icon.png",
+  "description": "",
+  "isManga": true,
+  "extClass": "RizzComic",
+  "lang": "en",
+  "contentRating": "sfw",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

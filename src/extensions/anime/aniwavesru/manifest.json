@@ -1,0 +1,15 @@
+{
+  "id": "d0611000-54a4-4191-a5e1-2a7c88caf0f5",
+  "name": "Aniwaves.ru",
+  "description": "",
+  "isManga": false,
+  "extClass": "AniwavesRU",
+  "lang": "en",
+  "contentRating": "sfw",
+  "url": "https://aniwaves.ru",
+  "iconUrl": "./icon.png",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true
+}

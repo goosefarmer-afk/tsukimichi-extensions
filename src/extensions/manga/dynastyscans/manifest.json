@@ -1,0 +1,15 @@
+{
+  "id": "1df81aab-59a9-4456-9a44-3df25ae7d9b7",
+  "name": "Dynasty Scans",
+  "description": "",
+  "extClass": "DynastyScans",
+  "isManga": true,
+  "lang": "en",
+  "contentRating": "mixed",
+  "url": "https://dynasty-scans.com",
+  "version": "0.1.0",
+  "apiUrl": "",
+  "supportsLatest": true,
+  "supportsPopular": true,
+  "iconUrl": "./icon.png"
+}
